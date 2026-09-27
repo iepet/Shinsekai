@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shinsekai · Trading Card Shop</title>
+  <meta name="description" content="Shinsekai Trading Card Shop. Aviat tindrem web! Mentrestant, seguiu-nos a les xarxes.">
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #6b6b6b;
+      --line: #ececec;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", system-ui, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 16px;
+      overflow-x: hidden;
+    }
+    main {
+      width: 100%;
+      max-width: 520px;
+      text-align: center;
+      animation: fade .7s ease both;
+    }
+    @keyframes fade { from { opacity: 0; transform: translateY(8px); } }
+
+    .logo {
+      width: min(240px, 60vw);
+      height: auto;
+      display: block;
+      margin: 0 auto 40px;
+    }
+
+    h1 {
+      font-size: clamp(1.4rem, 5vw, 1.75rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+    .lead {
+      font-size: 1.05rem;
+      color: var(--muted);
+      line-height: 1.55;
+      margin-bottom: 32px;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 44px;
+    }
+    .socials a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 20px;
+      border: 1px solid var(--text);
+      border-radius: 999px;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: .95rem;
+      transition: background .2s, color .2s;
+    }
+    .socials a:hover, .socials a:focus-visible {
+      background: var(--text);
+      color: var(--bg);
+    }
+    .socials svg { width: 18px; height: 18px; fill: currentColor; }
+
+    .balls {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: clamp(10px, 4vw, 22px);
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+    }
+    .balls img {
+      width: clamp(52px, 16vw, 76px);
+      height: auto;
+      transition: transform .25s ease;
+    }
+    .balls img:hover { transform: translateY(-6px) rotate(-6deg); }
+
+    .tip {
+      font-size: .98rem;
+      line-height: 1.55;
+    }
+    .tip strong { font-weight: 700; }
+
+    footer {
+      margin-top: 40px;
+      font-size: .8rem;
+      color: var(--muted);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="img/logo.png" alt="Shinsekai Trading Card Shop">
+
+    <h1>Encara no ens arriba per tenir web!</h1>
+    <p class="lead">Si voleu col·laborar, compartiu les nostres xarxes.</p>
+
+    <!-- Canvia EL_VOSTRE_USUARI pels vostres usuaris (esborra la xarxa que no feu servir) -->
+    <nav class="socials">
+      <a href="https://instagram.com/shinsekaishop" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zm0 4.7a5.1 5.1 0 1 0 0 10.2 5.1 5.1 0 0 0 0-10.2zm0 8.4a3.3 3.3 0 1 1 0-6.6 3.3 3.3 0 0 1 0 6.6zm5.3-9.8a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg>
+        Instagram
+      </a>
+      <a href="https://tiktok.com/@shinsekaishop" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 6.7a4.8 4.8 0 0 1-3.8-4.2V2h-3.4v13.7a2.9 2.9 0 1 1-2-2.7V9.5a6.3 6.3 0 1 0 5.4 6.2V8.8a8.2 8.2 0 0 0 4.8 1.5V6.9l-1-.2z"/></svg>
+        TikTok
+      </a>
+    </nav>
+
+    <div class="balls" aria-hidden="true">
+      <img src="img/ball1.png" alt="">
+      <img src="img/ball2.png" alt="">
+      <img src="img/ball3.png" alt="">
+      <img src="img/ball4.png" alt="">
+    </div>
+
+    <p class="tip">🎁 No us oblideu de mirar les <strong>cartes gratuïtes</strong> que tenim al costat de la màquina!</p>
+
+    <footer>Shinsekai · Trading Card Shop</footer>
+  </main>
+</body>
+</html>
